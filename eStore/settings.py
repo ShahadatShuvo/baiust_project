@@ -26,6 +26,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'debug_toolbar',
+    'django_extensions',
 
     'store.apps.StoreConfig',
     'chat.apps.ChatConfig',
@@ -126,3 +127,8 @@ INTERNAL_IPS = [
     '127.0.0.1',
     # ...
 ]
+
+GRAPH_MODELS = {
+  'all_applications': True,
+  'group_models': True,
+}
